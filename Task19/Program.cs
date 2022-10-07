@@ -1,13 +1,8 @@
 ﻿/* Задача 19
-
 Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
-
 14212 -> нет
-
 12821 -> да
-
 23432 -> да */
-
 
 (string yn, int number) GetPolyndrom(string message)
 {
@@ -20,7 +15,6 @@
         if (int.TryParse(Console.ReadLine(), out result) && result.ToString().Length == 5)
         {
             isCorrect = true;
-            bool isPolyndrom = false;
             string numStr = result.ToString();
             int lastSymbol = numStr.Length - 1;
             for (int i = 0; i < numStr.Length / 2; i++)
